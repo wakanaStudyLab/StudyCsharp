@@ -67,16 +67,16 @@ dotnet build -c Release
 
 ## 📁 提供サンプルコードの解説
 
-| ファイル | テーマ | 主な学習内容 |
-| :--- | :--- | :--- |
-| [`01_BasicsAndTypes.cs`](./01_BasicsAndTypes.cs) | **基本型・レコード・モダン構文** | `record class`, `record struct`, プライマリコンストラクタ (C# 12), `required` / `init` (C# 11), Raw String (`"""`), Index `^` & Range `..`, リストパターン, NRT |
-| [`02_CollectionsAndLinq.cs`](./02_CollectionsAndLinq.cs) | **コレクション・LINQ・Span** | LINQ パイプライン (`Where`, `Select`, `GroupBy`), C# 12 コレクション式 & スプレッド (`..`), `Span<T>` / `stackalloc` (ゼロアロケーション), .NET 8 `FrozenDictionary` |
-| [`03_AsyncAndConcurrency.cs`](./03_AsyncAndConcurrency.cs) | **非同期ストリーム & 並行処理** | `async / await`, `IAsyncEnumerable<T>` + `await foreach` (非同期ストリーミング), CancellationToken, Channels, .NET 9 新型 `System.Threading.Lock` (C# 13) |
-| [`04_ExceptionAndResource.cs`](./04_ExceptionAndResource.cs) | **リソース管理 & 例外ガード** | `using` 宣言 (`IDisposable`), `await using` (`IAsyncDisposable`), パターンマッチング例外フィルター (`when`), `CallerArgumentExpression` ガード節 |
-| [`05_LambdasAndDelegates.cs`](./05_LambdasAndDelegates.cs) | **ラムダ式・式ツリー** | `Func` / `Action`, 静的ラムダ (`static (x) => ...`), ローカル関数, 式ツリー (`Expression<Func<T, bool>>`) の構文木解析 |
-| [`06_GenericsAndInterfaces.cs`](./06_GenericsAndInterfaces.cs) | **ジェネリクス & インターフェース** | 静的抽象メンバ (C# 11) と Generic Math (`INumber<T>`), デフォルトインターフェースメソッド (DIM), 明示的インターフェース実装, 型制約 (`where T : ...`) |
-| [`07_AdvancedLanguageFeatures.cs`](./07_AdvancedLanguageFeatures.cs) | **高度な言語機能 & イテレータ** | `yield return` 遅延ジェネレータ, 拡張メソッド (`this T`), 演算子オーバーロード & `implicit` 変換, C# 12 型エイリアス, `in` パラメータ |
-| [`Program.cs`](./Program.cs) | **統合エントリーポイント** | 上記全モジュールを順番にバナー付きで実行するメインランナー |
+| ファイル | テーマ | 主な学習内容 | 詳細解説 |
+| :--- | :--- | :--- | :--- |
+| [`01_BasicsAndTypes.cs`](./01_BasicsAndTypes.cs) | **基本型・レコード・モダン構文** | `record class`, `record struct`, プライマリコンストラクタ (C# 12), `required` / `init` (C# 11), Raw String (`"""`), Index `^` & Range `..`, リストパターン, NRT | [📘 第 5 章](./GUIDE.md#5-モジュール-01-基本型レコードモダン構文-01_basicsandtypescs) |
+| [`02_CollectionsAndLinq.cs`](./02_CollectionsAndLinq.cs) | **コレクション・LINQ・Span** | LINQ パイプライン (`Where`, `Select`, `GroupBy`), C# 12 コレクション式 & スプレッド (`..`), `Span<T>` / `stackalloc` (ゼロアロケーション), .NET 8 `FrozenDictionary` | [📘 第 6 章](./GUIDE.md#6-モジュール-02-コレクションlinqspan-02_collectionsandlinqcs) |
+| [`03_AsyncAndConcurrency.cs`](./03_AsyncAndConcurrency.cs) | **非同期ストリーム & 並行処理** | `async / await`, `IAsyncEnumerable<T>` + `await foreach` (非同期ストリーミング), CancellationToken, Channels, .NET 9 新型 `System.Threading.Lock` (C# 13) | [📘 第 7 章](./GUIDE.md#7-モジュール-03-非同期プログラミング--並行処理-03_asyncandconcurrencycs) |
+| [`04_ExceptionAndResource.cs`](./04_ExceptionAndResource.cs) | **リソース管理 & 例外ガード** | `using` 宣言 (`IDisposable`), `await using` (`IAsyncDisposable`), パターンマッチング例外フィルター (`when`), `CallerArgumentExpression` ガード節 | [📘 第 8 章](./GUIDE.md#8-モジュール-04-例外処理リソース管理-04_exceptionandresourcecs) |
+| [`05_LambdasAndDelegates.cs`](./05_LambdasAndDelegates.cs) | **ラムダ式・式ツリー** | `Func` / `Action`, 静的ラムダ (`static (x) => ...`), ローカル関数, 式ツリー (`Expression<Func<T, bool>>`) の構文木解析 | [📘 第 9 章](./GUIDE.md#9-モジュール-05-ラムダ式デリゲート式ツリー-05_lambdasanddelegatescs) |
+| [`06_GenericsAndInterfaces.cs`](./06_GenericsAndInterfaces.cs) | **ジェネリクス & インターフェース** | 静的抽象メンバ (C# 11) と Generic Math (`INumber<T>`), デフォルトインターフェースメソッド (DIM), 明示的インターフェース実装, 型制約 (`where T : ...`) | [📘 第 10 章](./GUIDE.md#10-モジュール-06-ジェネリクスインターフェースモダン型システム-06_genericsandinterfacescs) |
+| [`07_AdvancedLanguageFeatures.cs`](./07_AdvancedLanguageFeatures.cs) | **高度な言語機能 & イテレータ** | `yield return` 遅延ジェネレータ, 拡張メソッド (`this T`), 演算子オーバーロード & `implicit` 変換, C# 12 型エイリアス, `in` パラメータ | [📘 第 11 章](./GUIDE.md#11-モジュール-07-高度な言語機能イテレータ拡張メソッド-07_advancedlanguagefeaturescs) |
+| [`Program.cs`](./Program.cs) | **統合エントリーポイント** | 上記全モジュールを順番にバナー付きで実行するメインランナー | [📘 第 4 章](./GUIDE.md#4-統合エントリーポイント-programcs) |
 
 > 📘 **Modern C# 実践完全解説ガイド (全モジュール総合解説書)**:  
 > 全 7 モジュールの詳細なコード解説、実際のコンソール実行結果、言語仕様と動作原理を網羅した総合解説書は [**`GUIDE.md`**](./GUIDE.md) を参照してください。
