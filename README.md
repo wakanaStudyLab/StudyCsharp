@@ -10,8 +10,6 @@ Rust, Go, Python, Java などの静的・動的型付け言語を習得済みの
 ## 🚀 クイックスタート (実行方法)
 
 ```powershell
-cd C:\Users\harun\programming\c#\sample
-
 # ビルド & 実行 (全モジュールが一括実行されます)
 dotnet run
 
