@@ -66,17 +66,17 @@ dotnet build -c Release
 
 | ファイル | テーマ | 主な学習内容 |
 | :--- | :--- | :--- |
-| [`01_BasicsAndTypes.cs`](file:///C:/Users/harun/programming/c%23/sample/01_BasicsAndTypes.cs) | **基本型・レコード・モダン構文** | `record class`, `record struct`, プライマリコンストラクタ (C# 12), `required` / `init` (C# 11), Raw String (`"""`), Index `^` & Range `..`, リストパターン, NRT |
-| [`02_CollectionsAndLinq.cs`](file:///C:/Users/harun/programming/c%23/sample/02_CollectionsAndLinq.cs) | **コレクション・LINQ・Span** | LINQ パイプライン (`Where`, `Select`, `GroupBy`), C# 12 コレクション式 & スプレッド (`..`), `Span<T>` / `stackalloc` (ゼロアロケーション), .NET 8 `FrozenDictionary` |
-| [`03_AsyncAndConcurrency.cs`](file:///C:/Users/harun/programming/c%23/sample/03_AsyncAndConcurrency.cs) | **非同期ストリーム & 並行処理** | `async / await`, `IAsyncEnumerable<T>` + `await foreach` (非同期ストリーミング), CancellationToken, Channels, .NET 9 新型 `System.Threading.Lock` (C# 13) |
-| [`04_ExceptionAndResource.cs`](file:///C:/Users/harun/programming/c%23/sample/04_ExceptionAndResource.cs) | **リソース管理 & 例外ガード** | `using` 宣言 (`IDisposable`), `await using` (`IAsyncDisposable`), パターンマッチング例外フィルター (`when`), `CallerArgumentExpression` ガード節 |
-| [`05_LambdasAndDelegates.cs`](file:///C:/Users/harun/programming/c%23/sample/05_LambdasAndDelegates.cs) | **ラムダ式・式ツリー** | `Func` / `Action`, 静的ラムダ (`static (x) => ...`), ローカル関数, 式ツリー (`Expression<Func<T, bool>>`) の構文木解析 |
-| [`06_GenericsAndInterfaces.cs`](file:///C:/Users/harun/programming/c%23/sample/06_GenericsAndInterfaces.cs) | **ジェネリクス & インターフェース** | 静的抽象メンバ (C# 11) と Generic Math (`INumber<T>`), デフォルトインターフェースメソッド (DIM), 明示的インターフェース実装, 型制約 (`where T : ...`) |
-| [`07_AdvancedLanguageFeatures.cs`](file:///C:/Users/harun/programming/c%23/sample/07_AdvancedLanguageFeatures.cs) | **高度な言語機能 & イテレータ** | `yield return` 遅延ジェネレータ, 拡張メソッド (`this T`), 演算子オーバーロード & `implicit` 変換, C# 12 型エイリアス, `in` パラメータ |
-| [`Program.cs`](file:///C:/Users/harun/programming/c%23/sample/Program.cs) | **統合エントリーポイント** | 上記全モジュールを順番にバナー付きで実行するメインランナー |
+| [`01_BasicsAndTypes.cs`](./sample/01_BasicsAndTypes.cs) | **基本型・レコード・モダン構文** | `record class`, `record struct`, プライマリコンストラクタ (C# 12), `required` / `init` (C# 11), Raw String (`"""`), Index `^` & Range `..`, リストパターン, NRT |
+| [`02_CollectionsAndLinq.cs`](./sample/02_CollectionsAndLinq.cs) | **コレクション・LINQ・Span** | LINQ パイプライン (`Where`, `Select`, `GroupBy`), C# 12 コレクション式 & スプレッド (`..`), `Span<T>` / `stackalloc` (ゼロアロケーション), .NET 8 `FrozenDictionary` |
+| [`03_AsyncAndConcurrency.cs`](./sample/03_AsyncAndConcurrency.cs) | **非同期ストリーム & 並行処理** | `async / await`, `IAsyncEnumerable<T>` + `await foreach` (非同期ストリーミング), CancellationToken, Channels, .NET 9 新型 `System.Threading.Lock` (C# 13) |
+| [`04_ExceptionAndResource.cs`](./sample/04_ExceptionAndResource.cs) | **リソース管理 & 例外ガード** | `using` 宣言 (`IDisposable`), `await using` (`IAsyncDisposable`), パターンマッチング例外フィルター (`when`), `CallerArgumentExpression` ガード節 |
+| [`05_LambdasAndDelegates.cs`](./sample/05_LambdasAndDelegates.cs) | **ラムダ式・式ツリー** | `Func` / `Action`, 静的ラムダ (`static (x) => ...`), ローカル関数, 式ツリー (`Expression<Func<T, bool>>`) の構文木解析 |
+| [`06_GenericsAndInterfaces.cs`](./sample/06_GenericsAndInterfaces.cs) | **ジェネリクス & インターフェース** | 静的抽象メンバ (C# 11) と Generic Math (`INumber<T>`), デフォルトインターフェースメソッド (DIM), 明示的インターフェース実装, 型制約 (`where T : ...`) |
+| [`07_AdvancedLanguageFeatures.cs`](./sample/07_AdvancedLanguageFeatures.cs) | **高度な言語機能 & イテレータ** | `yield return` 遅延ジェネレータ, 拡張メソッド (`this T`), 演算子オーバーロード & `implicit` 変換, C# 12 型エイリアス, `in` パラメータ |
+| [`Program.cs`](./sample/Program.cs) | **統合エントリーポイント** | 上記全モジュールを順番にバナー付きで実行するメインランナー |
 
 > 📖 **C# ラムダ式・デリゲート・式ツリーの完全理解ガイド**:  
-> デリゲートの歴史（C# 1.0〜12）、裏で生成される `<>c__DisplayClass` のヒープ割り当て、静的ラムダによる GC ゼロ最適化、Entity Framework の SQL 生成を支える式ツリーの正体まで完全網羅した解説は [**`LAMBDA.md`**](file:///C:/Users/harun/programming/c%23/sample/LAMBDA.md) を参照してください。
+> デリゲートの歴史（C# 1.0〜12）、裏で生成される `<>c__DisplayClass` のヒープ割り当て、静的ラムダによる GC ゼロ最適化、Entity Framework の SQL 生成を支える式ツリーの正体まで完全網羅した解説は [**`LAMBDA.md`**](./sample/LAMBDA.md) を参照してください。
 
 > 🛠️ **Modern C# .csproj 完全理解ガイド**:  
-> SDK スタイル .csproj の記法、`<Nullable>` / `<ImplicitUsings>`、NuGet パッケージ管理、ファイルコピー設定、マルチターゲット、Native AOT（単一バイナリ出力）まで完全網羅した解説は [**`CSPROJ_GUIDE.md`**](file:///C:/Users/harun/programming/c%23/sample/CSPROJ_GUIDE.md) を参照してください。
+> SDK スタイル .csproj の記法、`<Nullable>` / `<ImplicitUsings>`、NuGet パッケージ管理、ファイルコピー設定、マルチターゲット、Native AOT（単一バイナリ出力）まで完全網羅した解説は [**`CSPROJ_GUIDE.md`**](./sample/CSPROJ_GUIDE.md) を参照してください。
